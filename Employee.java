@@ -39,31 +39,22 @@ class Employee
     public static void main(String args[])
     {
         
-       // System.out.println("Enter a string:");
-        //String str=scn.nextLine();
-
-        Employee employee1=new Employee();
-        Employee employee2=new Employee();
-        Employee employee3=new Employee();
-        Employee employee4=new Employee();
-        Employee employee5=new Employee();
-
-        employee1.readdetails();
-        employee2.readdetails();
-        employee3.readdetails();
-        employee4.readdetails();
-        employee5.readdetails();
-
-        System.out.println("***EMPLOYEE DETAILS***");
-        employee1.printdetails();
-        employee2.printdetails();
-        employee3.printdetails();
-        employee4.printdetails();
-        employee5.printdetails();
+        Employee emp[]=new Employee[50];
+        for(int i=0;i<=4;i++)
+        {
+          emp[i]=new Employee();
         
+        }
+        
+        for(int i=0;i<=4;i++)
+            emp[i].readdetails();
 
+            System.out.println("***EMPLOYEE DETAILS***");
 
+        
+        for(int i=0;i<=4;i++)
+            emp[i].printdetails();
 
-    }
+          }
 
 }
